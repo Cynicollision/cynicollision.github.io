@@ -1,0 +1,29 @@
+﻿html, body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #efefef;
+    background-color: #4484ce;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: normal;
+}
+
+.bottom {
+    margin-bottom: 15%;
+}
+
+.button {
+    background-color: #efefef;
+    border-radius: 3px;
+    line-height: 26px;
+    vertical-align: middle;
+}
