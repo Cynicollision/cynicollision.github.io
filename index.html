@@ -1,32 +1,32 @@
 ﻿<html>
     <head>
-        <title>Sean Normoyle - Software Engineer</title>
+        <title>Sean T. Normoyle - Software Engineer</title>
         <style>
             a {
-                color: #07cff6;
+                color: #07575B;
             }
             a:visited {
-                color: #07cff6;
+                color: #07575B;
             }
             body {
                 display: flex;
                 flex-direction: column;
-                background-color: #04131e;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: #66A5AD;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 24px;
-                font-weight: lighter;
                 margin: 0;
                 padding: 0;
             }
             h1 {
                 font-size: 32px;
-                margin: 0;
+                font-weight: normal;
                 text-align: center;
+                margin: 0;
             }
             h2 {
-                font-weight: normal;
+                color: #003B46;
                 font-size: 28px;
-                color: #07cff6;
+                font-weight: normal;
                 margin: 0;
             }
             h3 {
@@ -41,20 +41,20 @@
                 margin-bottom: 80px;
             }
             #main {
-                background-color: #020204;
-                color: #fff;
+                background-color: #efefef;
+                color: #111;
                 flex: 1;
                 margin: 0 auto;
                 width: 100%;
             }
             #top {
-                color: #020204;
-                padding: 8px 16px;
-                background-color: #07cff6;
+                color: #efefef;
+                padding: 16px;
+                background-color: #003B46;
             }
             #subtop {
                 color: #E5F9E0;
-                background-color: #0d2534;
+                background-color: #07575B;
                 padding: 8px;
                 font-size: 20px;
                 text-align: center;
@@ -62,13 +62,32 @@
             #content {
                 padding: 20px;
             }
-            @media(min-width : 992px) {
+            .project {
+                display: flex;
+            }
+            .project-description {
+                float: left;
+                flex: 2;
+            }
+            .project-view {
+                display: none;
+                float: right;
+                flex: 1;
+                margin-left: 20px;
+                text-align: right;
+            }
+            @media(min-width: 768px) {
+                .project-view {
+                    display: block;
+                }
+            }
+            @media(min-width: 992px) {
                 #main {
                     max-width: 1200px;
                     width: 75%;
                 }
             }
-            @media only screen and (min-width : 1200px) {
+            @media(min-width : 1200px) {
                 h1 {
                     font-size: 48px;
                 }
@@ -91,7 +110,7 @@
     <body>
         <div id="main">
             <div id="top">
-                <h1>Sean Normoyle</h1>
+                <h1>Sean T. Normoyle</h1>
             </div>
             <div id="subtop">
                 <span>Software Engineer</span>
@@ -104,13 +123,13 @@
                     <p>I also help run the Western Massachusetts Development Technology user group - check us out on <a href="https://www.meetup.com/Western-Mass-Development-Technology-Users-Group/">Meetup.com</a>.</p>
                 </div>
                 <div>
-                        <h2>Talks</h2>
-                        <p>
-                            I'll be doing a session on <a href="https://expressjs.com">Express</a> in December 2017 for the Western MA Dev Tech user group. 
-                            All presentation material will be made available on GitHub and linked to from here.
-                            More information soon on our <a href="https://www.meetup.com/Western-Mass-Development-Technology-Users-Group/">Meetup site</a>.
-                        </p>
-                    </div>
+                    <h2>Talks</h2>
+                    <p>
+                        I'll be doing a session on <a href="https://expressjs.com">Express</a> in December 2017 for the Western MA Dev Tech user group. 
+                        All presentation material will be made available on GitHub and linked to from here.
+                        More information soon on our <a href="https://www.meetup.com/Western-Mass-Development-Technology-Users-Group/">Meetup site</a>.
+                    </p>
+                </div>
                 <div>
                     <h2>Experience</h2>
                     <p>
@@ -131,11 +150,24 @@
                 <div>
                     <h2>Projects</h2>
                     <h3>Blockmo</h3>
-                    <p>Fun game times</p> 
+                    <div class="project">
+                        <p class="project-description">Work in progress puzzle/platformer. TypeScript + HTML Canvas.</p> 
+                        <p class="project-view">SCREENSHOT</p> 
+                    </div>
                     <h3>Brewkeepr</h3>
-                    <p>Hobby + hobby = more time spent on one hobby than the other.</p>
+                    <div class="project">
+                        <p class="project-description">Hobby + hobby = more time spent on one hobby than the other.</p> 
+                        <p class="project-view">SCREENSHOT</p> 
+                    </div>
                     <h3>w3wp</h3>
-                    <p>Visual Studio extension yada yada yada. VS Marketplace link.</p>
+                    <div class="project">
+                        <p class="project-description">
+                            Visual Studio extension for quickly identifying running w3wp.exe process IDs. 
+                            Helpful when you have to debug while periodically restarting IIS (incl. Marketplace link).
+                        </p> 
+                        <p class="project-view">SCREENSHOT</p> 
+                    </div>
+                    <p></p>
                 </div>
                 <div>
                     <h2>More about me</h2>
