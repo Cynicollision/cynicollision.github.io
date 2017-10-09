@@ -3,109 +3,95 @@
         <title>Sean T. Normoyle - Software Engineer</title>
         <style>
             a {
-                color: #07575B;
+                color: #2C594F;
             }
             a:visited {
-                color: #07575B;
+                color: #2C594F;
             }
             body {
                 display: flex;
                 flex-direction: column;
-                background-color: #66A5AD;
+                background-color: #002D40;
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 24px;
+                font-size: 20px;
                 margin: 0;
                 padding: 0;
             }
             h1 {
-                font-size: 32px;
-                font-weight: normal;
+                color: #002D40;
+                font-size: 1.5em;
+                font-weight: 500;
                 text-align: center;
                 margin: 0;
             }
             h2 {
-                color: #003B46;
-                font-size: 28px;
-                font-weight: normal;
+                color: #E54661;
+                font-size: 1.3em;
+                font-weight: 500;
                 margin: 0;
             }
             h3 {
-                font-size: 28px;
-                color: #666;
-                margin: 8px 0;
+                font-size: 1.2em;
+                font-weight: 500;
+                color: #2C594F;
+                margin: 0.5em 0 0 0;
             }
             p {
-                margin-top: 8px;
+                margin-top: 0.5em;
             }
             p:last-child {
-                margin-bottom: 80px;
+                margin-bottom: 2em;
             }
             #main {
-                background-color: #efefef;
+                background-color: #fff;
                 color: #111;
-                flex: 1;
                 margin: 0 auto;
                 width: 100%;
             }
             #top {
-                color: #efefef;
-                padding: 16px;
-                background-color: #003B46;
+                padding: 0.5em;
             }
             #subtop {
-                color: #E5F9E0;
-                background-color: #07575B;
+                color: #333;
                 padding: 8px;
-                font-size: 20px;
+                font-size: 1.2em;
                 text-align: center;
             }
             #content {
-                padding: 20px;
+                padding: 1em;
             }
             .project {
                 display: flex;
+                flex-direction: column;
             }
-            .project-description {
-                float: left;
-                flex: 2;
+            .project-links {
+                text-align: center;
             }
             .project-view {
-                display: none;
-                float: right;
-                flex: 1;
-                margin-left: 20px;
-                text-align: right;
-            }
-            @media(min-width: 768px) {
-                .project-view {
-                    display: block;
-                }
+                margin-left: 1.5em;
+                text-align: center;
             }
             @media(min-width: 992px) {
                 #main {
                     max-width: 1200px;
                     width: 75%;
                 }
+                .project {
+                    flex-direction: row;
+                }
+                .project-links {
+                    text-align: left;
+                }
+                .project-view {
+                    text-align: right;
+                }
             }
             @media(min-width : 1200px) {
-                h1 {
-                    font-size: 48px;
-                }
-                h2 {
-                    font-size: 32px;
-                }
-                h3 {
-                    font-size: 28px;
-                }
-                #main {
-                    font-size: 28px;
-                }
-                #subtop {
+                body {
                     font-size: 24px;
                 }
             }
         </style>
-
     </head>
     <body>
         <div id="main">
@@ -120,7 +106,6 @@
                     <h2>Welcome</h2>
                     <p>Hi, my name's Sean. I'm what some people might call a <i>"programmer"</i>.</p>
                     <p>When I'm not coding I like to jam out on my guitar, play video games, and cook beer. Not all at once though.</p>
-                    <p>I also help run the Western Massachusetts Development Technology user group - check us out on <a href="https://www.meetup.com/Western-Mass-Development-Technology-Users-Group/">Meetup.com</a>.</p>
                 </div>
                 <div>
                     <h2>Talks</h2>
@@ -131,50 +116,54 @@
                     </p>
                 </div>
                 <div>
-                    <h2>Experience</h2>
-                    <p>
-                        I work professionally on line-of-business web applications these days, mostly making ASP.NET web servers with JavaScript frontends.
-                        It doesn't leave much time for side projects, but I like my job (Hi, boss!).
-                    </p>
-                    <p>
-                        I write a lot of C#. At work I'm primarily making ASP.NET and/or WCF application with SQL Server behind those. 
-                        I know enough about IIS to be dangerous. 
-                    </p>
-                    <p>
-                        I've worked with frontend technologies such as Angular (+ AngularJS, 1.x), Bootstrap, Webpack, unit testing frameworks/runners Jasmine/Karma, and all of the other ones you can't avoid in modern web development (with love).
-                    </p>
-                    <p>
-                        Other tehcnologies that I've worked wth include Node, express, mongo, etc.. I've also worked with Java and Android app development.
-                    </p>
-                </div>
-                <div>
                     <h2>Projects</h2>
                     <h3>Blockmo</h3>
                     <div class="project">
-                        <p class="project-description">Work in progress puzzle/platformer. TypeScript + HTML Canvas.</p> 
-                        <p class="project-view">SCREENSHOT</p> 
+                        <div class="project-description">
+                            <p>Work in progress puzzle/platformer for the browser Built with TypeScript and HTML Canvas.</p> 
+                            <p class="project-links"><a href="https://github.com/Cynicollision/Vastgame">GitHub</a></p>
+                        </div>
+                        <div class="project-view"><img src="img/blockmo.png" /></div> 
                     </div>
-                    <h3>Brewkeepr</h3>
+                    <h3>Brewkeeper</h3>
                     <div class="project">
-                        <p class="project-description">Hobby + hobby = more time spent on one hobby than the other.</p> 
-                        <p class="project-view">SCREENSHOT</p> 
+                        <div class="project-description">
+                            <p>Web app for tracking beer fermentaton and bottling dates. Built with JavaScript: MongoDB, Express.js, AngularJS, Node.js.</p> 
+                            <p class="project-links"><a href="https://github.com/Cynicollision/BrewKeeper">GitHub</a> | <a href="https://brewkeeper.herokuapp.com/">Live on Heroku</a>.</p>
+                        </div>
+                        <div class="project-view"><img src="img/brewkeeper.png" /></div>
                     </div>
-                    <h3>w3wp</h3>
+                    <h3>w3wpHUD</h3>
                     <div class="project">
-                        <p class="project-description">
-                            Visual Studio extension for quickly identifying running w3wp.exe process IDs. 
-                            Helpful when you have to debug while periodically restarting IIS (incl. Marketplace link).
-                        </p> 
-                        <p class="project-view">SCREENSHOT</p> 
+                        <div class="project-description">
+                            <p>Visual Studio extension for quickly identifying running w3wp.exe process IDs.</p>
+                            <p class="project-links"><a href="https://github.com/Cynicollision/w3wpHUD">GitHub</a> | <a href="https://marketplace.visualstudio.com/items?itemName=Cynicollision.w3wpHUD">Visual Studio Marketplace</a></p>
+                        </div> 
+                        <div class="project-view"><img src="img/w3wphud.png" /></div> 
                     </div>
                     <p></p>
                 </div>
                 <div>
-                    <h2>More about me</h2>
+                    <h2>Experience</h2>
                     <p>
-                        I'm from the Western Massachusetts area and I have my B.S. in Computer Science from Western New England University. 
-                        I'm also a Nintendo fanatic.
+                        I work professionally on line-of-business web applications these days, mostly working on ASP.NET web servers with JavaScript frontends.
+                        It doesn't leave a lot of time for side projects, but I like my job (Hi, boss!).
                     </p>
+                    <p>
+                        I write a lot of C# and JavaScript. At work I do full stack web development: JavaScript client, ASP.NET and/or WCF application with SQL Server backends. 
+                    </p>
+                    <p>
+                        I'm into building web applications with frontend technologies like Angular, Bootstrap, and Webpack, plus unit testing frameworks with Jasmine and Karma.
+                    </p>
+                    <p>
+                        I also like building backend systems with Node.js, Express.js, and MongoDB. In the past I've worked a little with Java and Android app development.
+                    </p>
+                </div>
+                <div>
+                    <h2>More about me</h2>
+                    <p>I'm from the Western Massachusetts area and I have my B.S. in Computer Science from Western New England University.</p>
+                    <p>I also help run the Western Massachusetts Development Technology user group - check us out on <a href="https://www.meetup.com/Western-Mass-Development-Technology-Users-Group/">Meetup.com</a>.</p>
+                    <p>I'm also a Nintendo fanatic.</p>
                 </div>
             </div>
         </div>
