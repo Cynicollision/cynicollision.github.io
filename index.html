@@ -10,14 +10,13 @@
                 color: #05729b;
             }
             html {
-                font-size: 20px;
+                font-size: 16px;
             }
             body {
                 display: flex;
                 flex-direction: column;
-                background-color: #222222;
+                background-color: #666666;
                 font-family: Tahoma, Geneva, Verdana, sans-serif;
-                /* font-size: 10px; */
                 margin: 0;
                 padding: 0;
             }
@@ -53,16 +52,16 @@
                 width: 100%;
             }
             #top {
-                background-color: #30577c;
-                padding: 0.8em;
+                background-color: #222222;
+                padding: 0.1em;
                 text-align: center;
             }
             #content {
-                padding: 1.5em;
+                padding: 1em;
             }
             #bottom {
-                background-color: #30577c;
-                padding: 1em;
+                background-color: #222222;
+                padding: 0.5em;
                 text-align: center;
             }
             .sub {
@@ -77,7 +76,7 @@
             }
             @media(min-width: 992px) {
                 #main {
-                    max-width: 1200px;
+                    max-width: 52rem;
                     width: 75%;
                 }
                 .project {
@@ -93,7 +92,7 @@
             }
             @media(min-width : 1200px) {
                 body {
-                    font-size: 24px;
+                    font-size: 18px;
                 }
             }
         </style>
@@ -107,22 +106,22 @@
             <div id="content">
                 <div>
                     <h2>Welcome</h2>
-                    <p>Hi, my name's Sean. I'm what some people might call a <i>programmer</i>.</p>
+                    <p>My name's Sean and I'm what some people might call a <i>programmer</i>.</p>
                 </div>
                 <div>
                     <h2>Projects</h2>
                     <h3>Stackmo</h3>
                     <div class="project">
                         <div class="project-description">
-                            <p>Puzzle/platformer for the browser Built with TypeScript and HTML Canvas. Playable, just needs polishing!</p> 
-                            <p class="project-links"><a href="http://seannormoyle.net/stackmo/view/game_min.html">Play It!</a> | <a href="https://github.com/Cynicollision/Vastgame">GitHub</a></p>
+                            <p>Puzzle/platformer for the browser Built with TypeScript and HTML Canvas.</p> 
+                            <p class="project-links"><a href="http://seannormoyle.net/stackmo/view/game_min.html">Play it in your browser!</a> | <a href="https://github.com/Cynicollision/Vastgame">GitHub</a></p>
                         </div>
                         <div class="project-view"><img src="img/stackmo.png" alt="Stackmo screenshot" /></div> 
                     </div>
-                    <h3>Brewkeeper</h3>
+                    <h3>Brew Keeper</h3>
                     <div class="project">
                         <div class="project-description">
-                            <p>Web app for tracking beer fermentaton and bottling dates. Built with JavaScript: MongoDB, Express.js, AngularJS, Node.js.</p> 
+                            <p>Web app for tracking beer fermentaton and bottling dates. Built with Angular and Express.</p> 
                             <p class="project-links"><a href="https://brewkeeper.herokuapp.com/">Live on Heroku</a> | <a href="https://github.com/Cynicollision/BrewKeeper">GitHub</a></p>
                         </div>
                         <div class="project-view"><img src="img/brewkeeper.png" alt="BrewKeeper screenshot" /></div>
@@ -139,31 +138,34 @@
                     <p></p>
                 </div>
                 <div>
-                    <h2>Talks</h2>
+                    <h2>Professional Experience</h2>
                     <p>
-                        I presented an introduction to <a href="https://expressjs.com">Express</a> in December 2017 for the Western MA Dev Tech user group. 
-                        All presentation material is available here on GitHub: <a href="https://github.com/Cynicollision/express-demo">github.com/Cynicollision/express-demo</a>.
+                        I work professionally on line-of-business web applications: JavaScript SPA frontends, ASP.NET and WCF server-side, and SQL Server behind that. I write a lot of JavaScript and C# and also am a certified Scrum Master (CSM).
+                    </p>
+                    <p>
+                        Lately I've been doing a lot of work with the Salesforce platform as a certified App Builder and Platform Developer I. 
+                    </p>
+                    <p>
+                        I like using open source technologies like Angular, Bootstrap, and Webpack, plus unit testing frameworks with Jasmine and Karma. 
+                        I also like building backend systems with Node.js, Express.js, and MongoDB. 
+                        In the past I've worked with Java and and done some Android app development.
                     </p>
                 </div>
                 <div>
-                    <h2>Professional Experience</h2>
+                    <h2>Talks</h2>
                     <p>
-                        I work professionally on line-of-business web applications: JavaScript SPA frontends, ASP.NET and WCF server-side, and SQL Server behind that. I write a lot of JavaScript, C#, and T-SQL. 
-                        It doesn't leave a lot of time for side projects, but I like my job (Hi, boss!).
-                    </p>
-                    <p>
-                        I like using front-end technologies like Angular, Bootstrap, and Webpack, plus unit testing frameworks with Jasmine and Karma. I'm pretty excited about React too and am looking forward to using it in future projects.
-                    </p>
-                    <p>
-                        I also like building backend systems with Node.js, Express.js, and MongoDB. In the past I've worked with Java and Android app development too.
+                        I occasionally present technical topics at the Western MA Dev Tech user group, such as:
+                        <ul>
+                            <li>Getting Started with Developing VS Code Extensions (September 2018, materials on <a href="https://github.com/Cynicollision/vscode-extend">GitHub</a>).</li>
+                            <li>Introduction to Express (December 2017, materials on <a href="https://github.com/Cynicollision/express-demo">GitHub</a>).</li>
+                        </ul>
                     </p>
                 </div>
                 <div>
                     <h2>More about me</h2>
                     <p>I'm from the Western Massachusetts area and I have my B.S. in Computer Science from Western New England University.</p>
-                    <p>When I'm not coding I like to jam out on my guitar, play video games, and cook beer. Not all at once though.</p>
                     <p>I help run the Western Massachusetts Development Technology user group - check us out on <a href="https://www.meetup.com/Western-Mass-Development-Technology-Users-Group/">Meetup.com</a>. We meet ~monthly and talk about all sorts of topics in technology.</p>
-                    <p>I'm also a Nintendo fanatic.</p>
+                    <p>When I'm not coding I like to produce music, play video games, and cook beer (not all at once, though). I'm also a Nintendo fanatic.</p>
                 </div>
             </div>
             <div id="bottom">
