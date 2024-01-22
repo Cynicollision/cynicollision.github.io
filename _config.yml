@@ -1,0 +1,22 @@
+title: "Sean Normoyle"
+author: "Sean Normoyle"
+description: ""
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Menu
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.md", title: "Home" }
+  - {file: "about.md" }
+  - {file: "projects.html" }
+  
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Github, icon: github, url: "https://github.com/Cynicollision"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/sean-normoyle-0049b541/"}
+  - {title: Trailhead, icon: cloud, url: "https://www.salesforce.com/trailblazer/seannormoyle"}
+
+plugins:
+ - jekyll-feed
