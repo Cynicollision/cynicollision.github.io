@@ -20,3 +20,10 @@ external:                  # shows a footer with social links - for available ic
 
 plugins:
  - jekyll-feed
+
+exclude:
+  - NOTES.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
