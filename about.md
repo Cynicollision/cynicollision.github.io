@@ -12,4 +12,10 @@ I also have lots of experience building web applicatons with .NET, NodeJS, Angul
 
 ### Certifications
 
-![System Architect Salesforce certification logo]({{ "/assets/images/sfcert-systemarchitect.png" | relative_url }})![Identity and Access Architect Salesforce certification logo]({{ "/assets/images/sfcert-identityarchitect.png" | relative_url }})![Integration Architect Salesforce certification logo]({{ "/assets/images/sfcert-integrationarchitect.png" | relative_url }})![Development Lifecycle and DeploymentSalesforce certification logo]({{ "/assets/images/sfcert-deploymentarchitect.png" | relative_url }})![Platform Developer I Salesforce certification logo]({{ "/assets/images/sfcert-dev1.png" | relative_url }})![Platform Builder Salesforce certification logo]({{ "/assets/images/sfcert-platformbuilder.png" | relative_url }})
+| <img src="{{ "/assets/images/sfcert-agentforce.png" | relative_url }}" width="125"> | **Salesforce Certified Agentforce Specialist** <br> Nov 2025 |
+| <img src="{{ "/assets/images/sfcert-systemarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified System Architect** <br> Jan 2022 |
+| <img src="{{ "/assets/images/sfcert-identityarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Identity and Access Management Architect** <br> Jan 2022 |
+| <img src="{{ "/assets/images/sfcert-integrationarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Integration Architect** <br> Oct 2021 |
+| <img src="{{ "/assets/images/sfcert-deploymentarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Development Lifecycle and Deployment Architect** <br> Aug 2021 |
+| <img src="{{ "/assets/images/sfcert-dev1.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Developer** <br> May 2018 |
+| <img src="{{ "/assets/images/sfcert-platformbuilder.png" | relative_url }}" width="125"> | **Salesforce Certified Platform App Builder** <br> Apr 2018 |
