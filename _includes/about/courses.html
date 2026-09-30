@@ -1,7 +1,7 @@
 <ul class="entries">
 {%- for course in site.data.education.courses %}
 <li class="entry">
-  <div class="when">{{ course.year }}</div>
+  <div class="when">{{ course.date }}</div>
   <div class="what"><h3 class="title">{{ course.name }}</h3><p class="muted">{{ course.school }}</p></div>
 </li>
 {%- endfor %}
