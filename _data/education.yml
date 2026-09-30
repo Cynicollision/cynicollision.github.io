@@ -7,10 +7,10 @@ degrees:
 courses:
   - name: Certificate Program in Agentic AI
     school: Johns Hopkins University, Executive and Professional Education
-    year: 2026
-  - name: Software Architecture Principles and Practices
-    school: Carnegie Mellon University, Software Engineering Institute
-    year: 2022
+    date: Sep 2026
   - name: Documenting Software Architectures
     school: Carnegie Mellon University, Software Engineering Institute
-    year: 2022
+    date: Nov 2022
+  - name: Software Architecture Principles and Practices
+    school: Carnegie Mellon University, Software Engineering Institute
+    date: Apr 2022
