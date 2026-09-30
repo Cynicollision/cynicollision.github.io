@@ -1,0 +1,9 @@
+{%- assign tool = include.tool -%}
+<li class="entry">
+  <div class="when">{{ tool.years | default: tool.year }}</div>
+  <div class="what">
+    <h4 class="title"><a href="{{ tool.url | relative_url }}">{{ tool.title }}</a></h4>
+    <p>{{ tool.description }}</p>
+    {% include project-links.html project=tool %}
+  </div>
+</li>

@@ -1,0 +1,7 @@
+{%- if include.project.links -%}
+<div class="links">
+{%- for link in include.project.links %}
+  {% include link.html url=link.url label=link.label %}
+{%- endfor %}
+</div>
+{%- endif -%}

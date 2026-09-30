@@ -1,21 +1,30 @@
 ---
-title: "About"
-permalink: "/about"
 layout: page
+title: About
+permalink: /about/
+lede: I've been writing software professionally since 2012, and working on the Salesforce platform since 2018.
 ---
 
-My name is Sean Normoyle and I'm a programmer and architect located in Connecticut.
+I'm currently a Salesforce architect in the {% include link.html url="https://en.wikipedia.org/wiki/Farm_Credit_System" label="Farm Credit System" %}. Before Salesforce, I built applications with .NET, SQL Server, and JavaScript, and did some ServiceNow development.
 
-I'm currently working as a Salesforce Architect in [Farm Credit](https://en.wikipedia.org/wiki/Farm_Credit_System) and have been working with the Salesforce platform since 2018 - my certifications are listed below.
+## Education
 
-I also have lots of experience building web applicatons with .NET, NodeJS, Angular, and SQL.
+{% include about/education.html %}
 
-### Certifications
+## Certifications
 
-| <img src="{{ "/assets/images/sfcert-agentforce.png" | relative_url }}" width="125"> | **Salesforce Certified Agentforce Specialist** <br> Nov 2025 |
-| <img src="{{ "/assets/images/sfcert-systemarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified System Architect** <br> Jan 2022 |
-| <img src="{{ "/assets/images/sfcert-identityarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Identity and Access Management Architect** <br> Jan 2022 |
-| <img src="{{ "/assets/images/sfcert-integrationarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Integration Architect** <br> Oct 2021 |
-| <img src="{{ "/assets/images/sfcert-deploymentarchitect.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Development Lifecycle and Deployment Architect** <br> Aug 2021 |
-| <img src="{{ "/assets/images/sfcert-dev1.png" | relative_url }}" width="125"> | **Salesforce Certified Platform Developer** <br> May 2018 |
-| <img src="{{ "/assets/images/sfcert-platformbuilder.png" | relative_url }}" width="125"> | **Salesforce Certified Platform App Builder** <br> Apr 2018 |
+{% include about/certifications.html %}
+
+## Courses
+
+{% include about/courses.html %}
+
+## Talks
+
+{% include about/talks.html %}
+
+## Outside of work
+
+I live in Connecticut with my wife and our cats. I've loved video games for as long as I can remember, especially The Legend of Zelda and Pokémon. I also like reading, biking, working outside and around the house, and playing guitar and bass.
+
+Games are what got me into technology in the first place. Game Maker had me making games around 2003, which led to building sites on GeoCities, then to PHP, then to volunteering as an account reviewer at a web hosting company, and eventually to a degree in computer science. Making games has been a continuous hobby ever since 2012, starting with native Android development and continuing with the browser games on this site.

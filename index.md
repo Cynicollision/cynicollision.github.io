@@ -1,14 +1,9 @@
 ---
-layout: page-headless
-title: "Home"
+layout: home
+body_class: home
+redirect_from: /projects/
 ---
 
-<header>
-    <h1>Sean T. Normoyle</h1>
-</header>
+I'm a Salesforce architect in the Farm Credit System, based in Connecticut. I've worked on the Salesforce platform since 2018, and before that built applications with .NET, SQL Server, and JavaScript.
 
-### Software Engineer and Salesforce Architect
-
-Welcome to my personal site.
-
-You can learn [more about me here]({{ "/about" | relative_url  }}), or browse [some of my work here]({{ "/projects" | relative_url  }}).
+Outside of work I make browser games and build things with TypeScript, Angular, and Node.js.

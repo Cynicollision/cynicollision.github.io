@@ -1,29 +1,37 @@
 title: "Sean Normoyle"
 author: "Sean Normoyle"
-description: ""
-permalink: /:title/
+tagline: "Software engineer and Salesforce architect."
+description: "Sean Normoyle is a software engineer and Salesforce architect. Salesforce certifications, talks, browser games, and tools."
+url: "https://seannormoyle.net"
 lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+permalink: /:title/
 
-# Menu
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md", title: "Home" }
-  - {file: "about.md" }
-  - {file: "projects.html" }
-  
+# Projects live in _games/ and _tools/, one Markdown file each.
+collections:
+  games:
+    output: true
+    permalink: /games/:name/
+  tools:
+    output: true
+    permalink: /tools/:name/
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Github, icon: github, url: "https://github.com/Cynicollision"}
-  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/sean-normoyle-0049b541/"}
-  - {title: Trailhead, icon: cloud, url: "https://www.salesforce.com/trailblazer/seannormoyle"}
+defaults:
+  - scope: { path: "", type: games }
+    values: { layout: project, section: Games }
+  - scope: { path: "", type: tools }
+    values: { layout: project, section: Tools }
+  - scope: { path: "games/stackmo/play/game_debug.html" }
+    values: { sitemap: false }
 
 plugins:
- - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 exclude:
   - NOTES.md
+  - README.md
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - .gitignore
+  - .gemini
+  - vendor

@@ -1,0 +1,5 @@
+<ul class="socials" aria-label="Elsewhere">
+{%- for link in site.data.social %}
+  <li>{% include link.html url=link.url label=link.title %}</li>
+{%- endfor %}
+</ul>

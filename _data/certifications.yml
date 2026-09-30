@@ -1,0 +1,22 @@
+# Newest first.
+- name: Salesforce Certified Agentforce Specialist
+  date: Nov 2025
+  badge: /assets/images/sfcert-agentforce.png
+- name: Salesforce Certified System Architect
+  date: Jan 2022
+  badge: /assets/images/sfcert-systemarchitect.png
+- name: Salesforce Certified Platform Identity and Access Management Architect
+  date: Jan 2022
+  badge: /assets/images/sfcert-identityarchitect.png
+- name: Salesforce Certified Platform Integration Architect
+  date: Oct 2021
+  badge: /assets/images/sfcert-integrationarchitect.png
+- name: Salesforce Certified Platform Development Lifecycle and Deployment Architect
+  date: Aug 2021
+  badge: /assets/images/sfcert-deploymentarchitect.png
+- name: Salesforce Certified Platform Developer
+  date: May 2018
+  badge: /assets/images/sfcert-dev1.png
+- name: Salesforce Certified Platform App Builder
+  date: Apr 2018
+  badge: /assets/images/sfcert-platformbuilder.png

@@ -1,0 +1,391 @@
+/* seannormoyle.net. Plain CSS, no build step. */
+
+:root {
+  --paper: #FBFBF9;
+  --ink: #1D2433;
+  --slate: #5A6372;
+  --rule: #E2E4E7;
+  --accent: #0B6770;
+  --well: #EFF1F0;
+  --measure: 36rem;
+  --page: 46rem;
+  --year-col: 6.5rem;
+  --shot-col: 15rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14181F;
+    --ink: #E4E6EA;
+    --slate: #9AA2AE;
+    --rule: #2A303A;
+    --accent: #6CC3C9;
+    --well: #1C2129;
+  }
+}
+
+/* Base */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Literata", Charter, "Iowan Old Style", Georgia, serif;
+  font-optical-sizing: auto;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
+
+@media (min-width: 48em) {
+  body { font-size: 1.125rem; }
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+img { max-width: 100%; height: auto; }
+
+code {
+  font-size: .9em;
+  background: var(--well);
+  border-radius: 3px;
+  padding: .1em .3em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: var(--paper);
+  padding: .5rem .75rem;
+  z-index: 1;
+}
+
+.skip-link:focus { top: 1rem; }
+
+.wrap {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 48em) {
+  .wrap { padding: 0 2rem; }
+}
+
+/* Type scale: a major third from the body size */
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 1.7rem + 3.2vw, 3.6rem);
+  font-weight: 450;
+  letter-spacing: -.015em;
+  line-height: 1.05;
+}
+
+.page-title {
+  font-size: clamp(2rem, 1.6rem + 1.6vw, 2.6rem);
+  font-weight: 450;
+  letter-spacing: -.01em;
+}
+
+main h2 {
+  font-size: 1.6rem;
+  margin: 4rem 0 1.25rem;
+}
+
+/* Subsections, like Games and Tools */
+main h3 {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--slate);
+  margin: 2.25rem 0 .75rem;
+}
+
+p { margin: 0 0 1em; max-width: var(--measure); }
+
+.lede {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: var(--slate);
+  margin: .6rem 0 1.5rem;
+}
+
+.muted { color: var(--slate); }
+
+.prose ul, .prose ol { max-width: var(--measure); padding-left: 1.2rem; margin: 0 0 1em; }
+.prose li { margin: 0 0 .3rem; }
+
+/* Header and footer */
+
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.site-name {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.site-name:hover { color: var(--accent); text-decoration: none; }
+
+/* The home page shows the name large instead. */
+.home .site-name { visibility: hidden; }
+
+.site-nav { display: flex; gap: 1.5rem; }
+
+.site-nav a { color: var(--slate); text-decoration: none; }
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
+main { padding-top: 2.5rem; }
+
+.home main { padding-top: 3.5rem; }
+
+.site-footer {
+  margin-top: 5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--slate);
+  font-size: .9rem;
+}
+
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .75rem 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Links */
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.4rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem 1.1rem;
+  margin-top: .45rem;
+  font-size: .95em;
+}
+
+/* Marks links that open in a new tab. */
+.ext::after {
+  content: "";
+  display: inline-block;
+  width: .62em;
+  height: .62em;
+  margin-left: .22em;
+  vertical-align: .05em;
+  background: currentColor;
+  opacity: .7;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M3 1h6v6M9 1 1 9' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M3 1h6v6M9 1 1 9' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* Entries: a year in the left margin, details to the right. Used for tools, credentials, talks, and the engine history. */
+
+.entries { list-style: none; margin: 0; padding: 0; }
+
+.entry {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .1rem 1.5rem;
+  padding: .85rem 0;
+}
+
+.entry + .entry { border-top: 1px solid var(--rule); }
+
+.when {
+  color: var(--slate);
+  font-size: .9em;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.entry .what { min-width: 0; }
+
+main .entry .title {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0;
+}
+
+.entry .title a,
+.game-head a {
+  color: var(--ink);
+  text-decoration-color: var(--rule);
+}
+
+.entry .title a:hover,
+.game-head a:hover { text-decoration-color: var(--accent); }
+
+.entry p { margin: .15rem 0 0; }
+
+@media (min-width: 36em) {
+  .entry { grid-template-columns: var(--year-col) 1fr; }
+  .entry .when { padding-top: .12em; }
+}
+
+/* Certifications: the badge anchors the row. On phones it sits left of the date and name; wider, it gets its own column. */
+.entry.badge {
+  grid-template-columns: 46px 1fr;
+  grid-template-areas: "badge when" "badge what";
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.entry.badge .when { grid-area: when; align-self: end; padding-top: 0; }
+.entry.badge .what { grid-area: what; align-self: start; }
+.entry.badge .badge-img { grid-area: badge; width: 46px; height: auto; }
+
+@media (min-width: 36em) {
+  .entry.badge {
+    grid-template-columns: var(--year-col) 46px 1fr;
+    grid-template-areas: "when badge what";
+  }
+
+  .entry.badge .when,
+  .entry.badge .what { align-self: center; }
+}
+
+.after-list { margin-top: .75rem; }
+
+/* Games: each is one row, so a title always sits beside (or on phones, directly above) its own screenshot. */
+
+.game {
+  display: grid;
+  grid-template-areas: "head" "shot" "body";
+  gap: .7rem;
+  padding: 1.75rem 0;
+}
+
+.game:first-child { padding-top: .5rem; }
+
+.game + .game { border-top: 1px solid var(--rule); }
+
+.game-head {
+  grid-area: head;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+main .game-head h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.game-shot { grid-area: shot; display: block; }
+.game-body { grid-area: body; }
+.game-body p { margin: 0; }
+
+@media (min-width: 40em) {
+  .game {
+    grid-template-columns: var(--shot-col) 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "shot head" "shot body";
+    gap: .35rem 1.75rem;
+  }
+}
+
+/* Screenshots. Crisp scaling for pixel art; letterboxed on a matching color when image_bg is set. */
+
+.shot {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  background: var(--frame, var(--well));
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shot.letterbox img { object-fit: contain; }
+.shot.pixel img { image-rendering: pixelated; }
+
+/* Project pages */
+
+.back { font-size: .95em; margin-bottom: 1.25rem; }
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem 1.5rem;
+  color: var(--slate);
+  font-size: .95em;
+  font-variant-numeric: lining-nums;
+  margin-bottom: .25rem;
+}
+
+.project-shot { margin: 2rem 0; }
+.project-shot .shot { aspect-ratio: auto; }
+.project-shot .shot img { height: auto; }
+.project-shot .shot.letterbox { aspect-ratio: 16 / 9; }
+.project-shot .shot.letterbox img { height: 100%; }

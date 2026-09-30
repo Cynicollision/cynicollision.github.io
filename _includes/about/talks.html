@@ -1,0 +1,14 @@
+<ul class="entries">
+{%- for talk in site.data.talks %}
+<li class="entry">
+  <div class="when">{{ talk.date }}</div>
+  <div class="what">
+    <h3 class="title">{{ talk.title }}</h3>
+    <p class="muted">{{ talk.venue }}</p>
+    {%- if talk.url %}
+    <div class="links">{% include link.html url=talk.url label="Code samples" %}</div>
+    {%- endif %}
+  </div>
+</li>
+{%- endfor %}
+</ul>
