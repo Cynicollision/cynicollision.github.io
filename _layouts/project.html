@@ -1,0 +1,19 @@
+---
+layout: base
+---
+<p class="back"><a href="{{ '/#projects' | relative_url }}">Projects</a></p>
+<h1 class="page-title">{{ page.title }}</h1>
+<p class="lede">{{ page.description }}</p>
+<p class="project-meta">
+  <span>{{ page.years | default: page.year }}</span>
+  {%- if page.tech %}
+  <span>{{ page.tech }}</span>
+  {%- endif %}
+</p>
+{% include project-links.html project=page %}
+{%- if page.image %}
+<div class="project-shot">{% include shot.html project=page %}</div>
+{%- endif %}
+<div class="prose">
+{{ content }}
+</div>

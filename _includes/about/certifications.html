@@ -1,0 +1,10 @@
+<ul class="entries">
+{%- for cert in site.data.certifications %}
+<li class="entry badge">
+  <div class="when">{{ cert.date }}</div>
+  <img class="badge-img" src="{{ cert.badge | relative_url }}" alt="" width="46" height="45">
+  <div class="what"><h3 class="title">{{ cert.name }}</h3></div>
+</li>
+{%- endfor %}
+</ul>
+<p class="muted after-list">Verify these on my {% include link.html url="https://www.salesforce.com/trailblazer/seannormoyle" label="Trailhead profile" %}. I also held the Certified ScrumMaster credential from 2018 to 2022.</p>

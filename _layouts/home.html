@@ -1,0 +1,27 @@
+---
+layout: base
+---
+<h1 class="hero-name">Sean T. Normoyle</h1>
+<p class="lede">{{ site.tagline }}</p>
+<div class="intro">
+{{ content }}
+</div>
+{% include social-links.html %}
+
+<h2 id="projects">Projects</h2>
+
+<h3>Games</h3>
+{%- assign games = site.games | sort: "year" | reverse %}
+<div class="games">
+{%- for game in games %}
+{% include game-entry.html game=game %}
+{%- endfor %}
+</div>
+
+<h3>Tools</h3>
+{%- assign tools = site.tools | sort: "year" | reverse %}
+<ul class="entries">
+{%- for tool in tools %}
+{% include tool-entry.html tool=tool %}
+{%- endfor %}
+</ul>

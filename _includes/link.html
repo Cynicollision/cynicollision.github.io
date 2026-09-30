@@ -1,0 +1,10 @@
+{%- comment -%}
+  A link that opens external URLs (anything starting with "http") in a new tab.
+  Usage: {% include link.html url="..." label="..." %}
+{%- endcomment -%}
+{%- assign scheme = include.url | slice: 0, 4 -%}
+{%- if scheme == "http" -%}
+<a class="ext" href="{{ include.url }}" target="_blank" rel="noopener">{{ include.label }}<span class="sr-only"> (opens in a new tab)</span></a>
+{%- else -%}
+<a href="{{ include.url | relative_url }}">{{ include.label }}</a>
+{%- endif -%}

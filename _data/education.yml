@@ -1,0 +1,16 @@
+degrees:
+  - name: B.S. in Computer Science
+    school: Western New England University
+    year: 2013
+
+# Online programs completed with a certificate of completion (not certifications or degrees). Newest first.
+courses:
+  - name: Certificate Program in Agentic AI
+    school: Johns Hopkins University, Executive and Professional Education
+    year: 2026
+  - name: Software Architecture Principles and Practices
+    school: Carnegie Mellon University, Software Engineering Institute
+    year: 2022
+  - name: Documenting Software Architectures
+    school: Carnegie Mellon University, Software Engineering Institute
+    year: 2022

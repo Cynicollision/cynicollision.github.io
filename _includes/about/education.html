@@ -1,0 +1,8 @@
+<ul class="entries">
+{%- for degree in site.data.education.degrees %}
+<li class="entry">
+  <div class="when">{{ degree.year }}</div>
+  <div class="what"><h3 class="title">{{ degree.name }}</h3><p class="muted">{{ degree.school }}</p></div>
+</li>
+{%- endfor %}
+</ul>

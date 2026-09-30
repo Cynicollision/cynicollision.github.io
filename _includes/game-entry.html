@@ -1,0 +1,14 @@
+{%- assign game = include.game -%}
+<article class="game">
+  <header class="game-head">
+    <h4><a href="{{ game.url | relative_url }}">{{ game.title }}</a></h4>
+    <span class="when">{{ game.years | default: game.year }}</span>
+  </header>
+  {%- if game.image %}
+  <a class="game-shot" href="{{ game.url | relative_url }}" tabindex="-1" aria-hidden="true">{% include shot.html project=game lazy=true %}</a>
+  {%- endif %}
+  <div class="game-body">
+    <p>{{ game.description }}</p>
+    {% include project-links.html project=game %}
+  </div>
+</article>

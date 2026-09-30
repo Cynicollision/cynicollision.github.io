@@ -1,0 +1,7 @@
+{%- comment -%}
+  A project screenshot in a fixed-ratio frame. Images with image_bg are letterboxed on that color instead of cropped.
+{%- endcomment -%}
+{%- assign project = include.project -%}
+<figure class="shot{% if project.pixel_art %} pixel{% endif %}{% if project.image_bg %} letterbox{% endif %}"{% if project.image_bg %} style="--frame: {{ project.image_bg }}"{% endif %}>
+  <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}"{% if include.lazy %} loading="lazy"{% endif %}>
+</figure>
