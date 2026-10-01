@@ -16,4 +16,4 @@ links:
 
 Nine Lives is the demo game for [VastGameKit]({{ '/tools/vastgamekit/' | relative_url }}), my 2D game engine for the browser. It uses most of what the engine offers: Tiled maps, sprite animation, collision, a camera that follows the player, sound, and a saved high score.
 
-Hop with the arrow keys or W, A, S, and D. Press M to turn the sound on or off, and P to pause.
+Hop with the arrow keys or W, A, S, and D. Press M to turn the sound on or off, and P to pause. On a touch screen, steer with one thumb on an on-screen d-pad, on whichever side you choose.
